@@ -1,0 +1,15 @@
+name: ServerTools
+version: '${project.version}'
+main: kalle.com.servertools.ServerTools
+api-version: 1.13
+commands:
+  gamemode:
+    usage: |
+            /gamemode <mode>
+            /gamemode <mode> <player>
+    description: A command to change the gamemode of a player.
+  kill:
+    usage: |
+            /kill
+            /kill <player>
+    description: A command to kill a player.
