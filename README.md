@@ -2,7 +2,7 @@
 
 ## Commands
 **/gamemode**
-- requires two arguments
+- accepts two arguments, but requires at least one
 - first argument: an integer in the range of 0-3 (determining which gamemode)
 - second argument: the name of a player (needs to be online)
 - integer 0: survival
