@@ -13,3 +13,8 @@ commands:
             /kill
             /kill <player>
     description: A command to kill a player.
+  vanish:
+    usage: |
+            /vanish
+            /vanish <player>
+    description: A command to let a player vanish.

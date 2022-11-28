@@ -20,6 +20,7 @@ public class KillCommand implements CommandExecutor {
                     return true;
                 }
                 sender.sendMessage(ChatColor.AQUA + "[ServerTools]" + ChatColor.RED + " The command requires an argument!"); //sender is not a player and an argument is required
+                return false;
             }
             for (Player player : Bukkit.getOnlinePlayers()) {
                 if (player.getName().equals(args[0])) {
