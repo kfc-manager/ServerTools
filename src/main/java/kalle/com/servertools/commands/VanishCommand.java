@@ -54,7 +54,9 @@ public class VanishCommand implements CommandExecutor {
 
     public static boolean vanish(Player player) {
         if (!invisiblePlayers.containsKey(player)) {
-            //TODO let player vanish
+            //TODO hide armour of player
+            //TODO hide arrows stuck in player
+            //TODO hide item in players hand
             try {
                 invisiblePlayers.put(player, startInvisibility(player));
             } catch (IllegalArgumentException e) {
@@ -62,7 +64,7 @@ public class VanishCommand implements CommandExecutor {
             }
             return true;
         }
-        //TODO player should not be vanished anymore
+        //TODO let armour, arrows and items reappear
         stopInvisibility(player);
         invisiblePlayers.remove(player);
         return false;
